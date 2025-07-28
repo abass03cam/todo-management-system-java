@@ -22,7 +22,3 @@ A web-based task management system developed using **Java Servlets**, **JSP**, a
 - HTML/CSS (for UI)
 - Apache Tomcat 9 (server deployment)
 
----
-
-## 🗂️ Project Structure
-
