@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+    id="WebApp_ID" version="4.0">
+
+    <display-name>ToDoLists</display-name>
+  
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>registration.jsp</welcome-file>
+        <welcome-file>todos.jsp</welcome-file>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+  
+    <!-- Servlet definieren -->
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>com.todo.projekt.Login</servlet-class> 
+    </servlet>
+  
+    <!-- Map your servlet to a URL pattern -->
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern> 
+    </servlet-mapping>
+    
+    
+     <servlet>
+        <servlet-name>RegistrationServlet</servlet-name>
+        <servlet-class>com.todo.projekt.RegistrationServlet</servlet-class> 
+    </servlet>
+  
+    
+    <servlet-mapping>
+        <servlet-name>RegistrationServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>TaskServlet</servlet-name>
+        <servlet-class>com.todo.projekt.TaskServlet</servlet-class> 
+    </servlet>
+  
+   
+    <servlet-mapping>
+        <servlet-name>TaskServlet</servlet-name>
+        <url-pattern>/TaskServlet</url-pattern> 
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>TodoServlet</servlet-name>
+        <servlet-class>com.todo.projekt.TodoServlet</servlet-class> 
+    </servlet>
+  
+   
+    <servlet-mapping>
+        <servlet-name>TodoServlet</servlet-name>
+        <url-pattern>/todos</url-pattern> 
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.todo.projekt.LogoutServlet</servlet-class> 
+    </servlet>
+  
+   
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern> 
+    </servlet-mapping>
+
+</web-app>
